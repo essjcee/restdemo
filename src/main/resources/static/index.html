@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Music Items</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <script src="scripts.js"></script>
+</head>
+<body style="background-color: #a4e7ed; color:#364d4f" onload="getItems()">
+<h2>Music Collection</h2>
+<table style="width:30%">
+    <tr><td>ID</td><td><span id="id"></span></td></tr>
+    <tr><td>Name</td><td><input id="name" type="text" size="40"></td></tr>
+    <tr><td>Artist or Group</td><td><input id="artist_group" type="text" size="40"></td></tr>
+    <tr><td>Genre</td><td><input id="genre" type="text" size="20"></td></tr>
+    <tr>
+        <td colspan="2">
+            <button id="save" onclick="saveItem()" disabled="disabled">Save Music Item</button>
+            &nbsp;<button id="add" onclick="addItem()">Add Music Item</button>
+        </td>
+    </tr>
+</table>
+<p></p>
+<table id="items">
+    <thead>
+    <tr>
+        <th width="5%">Id</th>
+        <th width="30%">Name</th>
+        <th width="30%">Artist or Group</th>
+        <th width="15%">Genre</th>
+        <th width="20%">Operation</th>
+    </tr>
+    </thead>
+    <tbody id="tbodyitems"></tbody>
+</table>
+</body>
+</html>
